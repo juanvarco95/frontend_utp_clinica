@@ -1,0 +1,56 @@
+
+<div class = "center">
+    <div class = "my-2 text-left">
+        <button type="button" class="btn btn-outline-primary">Crear Paciente</button>
+    </div>
+    <div *ngIf = "pacientes.length == 0" class = "alert alert-info">
+        No hay registro en la base de datos
+    </div>
+
+    <table class="table table-bordered table-striped table-hover" *ngIf="pacientes.length > 0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>TIPO DE DOCUMENTO</th>
+                <th>DOCUMENTO</th>
+                <th>FECHA DE NACIMIENTO</th>
+                <th>LUGAR DE NACIMIENTO</th>
+                <th>GÉNERO</th>
+                <th>OCUPACIÓN/HOBBIES</th>
+                <th>ESTADO CIVIL</th>
+                <th>LUGAR DE PROCEDENCIA</th>
+                <th>LUGAR DE RESIDENCIA</th>
+                <th>TIPO DE SANGRE</th>
+                <th>EPS</th>
+                <th>TELEFONO DEL ACOMPAÑANTE</th>
+                <th>CONFIABILIDAD</th>
+                <th>SERVICIO</th>
+                <th>LUGAR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let paciente of pacientes">
+                <td> {{paciente.id}} </td>
+                <td> {{paciente.nombre}} </td>
+                <td> {{paciente.apellido}} </td>
+                <td> {{paciente.tipoDocumento}} </td>
+                <td> {{paciente.documento}} </td>
+                <td> {{paciente.fechaNacimiento}} </td>
+                <td> {{paciente.lugarNacimiento}} </td>
+                <td> {{paciente.genero}} </td>
+                <td> {{paciente.ocupacionHobbies}} </td>
+                <td> {{paciente.estadoCivil}} </td>
+                <td> {{paciente.lugarProcencia}} </td>
+                <td> {{paciente.lugarResidencia}} </td>
+                <td> {{paciente.tipoSangre}} </td>
+                <td> {{paciente.eps}} </td>
+                <td> {{paciente.acompananteTelefono}} </td>
+                <td> {{paciente.confiabilidad}} </td>
+                <td> {{paciente.servicio}} </td>
+                <td> {{paciente.lugar}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
