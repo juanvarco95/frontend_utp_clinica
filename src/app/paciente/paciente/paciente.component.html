@@ -1,7 +1,7 @@
 
 <div class = "center">
     <div class = "my-2 text-left">
-        <button type="button" class="btn btn-outline-primary">Crear Paciente</button>
+        <button type="button" class="btn btn-outline-primary" [routerLink] = "['/pacientes/form']">Crear Paciente</button>
     </div>
     <div *ngIf = "pacientes.length == 0" class = "alert alert-info">
         No hay registro en la base de datos
@@ -20,6 +20,7 @@
                 <th>GÉNERO</th>
                 <th>OCUPACIÓN/HOBBIES</th>
                 <th>ESTADO CIVIL</th>
+                <th>RELIGION</th>
                 <th>LUGAR DE PROCEDENCIA</th>
                 <th>LUGAR DE RESIDENCIA</th>
                 <th>TIPO DE SANGRE</th>
@@ -42,6 +43,7 @@
                 <td> {{paciente.genero}} </td>
                 <td> {{paciente.ocupacionHobbies}} </td>
                 <td> {{paciente.estadoCivil}} </td>
+                <td> {{paciente.religion}} </td>
                 <td> {{paciente.lugarProcencia}} </td>
                 <td> {{paciente.lugarResidencia}} </td>
                 <td> {{paciente.tipoSangre}} </td>
@@ -50,6 +52,12 @@
                 <td> {{paciente.confiabilidad}} </td>
                 <td> {{paciente.servicio}} </td>
                 <td> {{paciente.lugar}} </td>
+                <td>
+                    <button type="button" name = "Editar" class="btn btn-outline-info" [routerLink] = "['/pacientes/form', paciente.id]">Editar</button>
+                </td>
+                <td>
+                    <button type="button" name = "Eliminar" class="btn btn-outline-danger" (click)="delete(paciente)">Eliminar</button>
+                </td>
             </tr>
         </tbody>
     </table>

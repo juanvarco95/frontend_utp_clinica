@@ -1,1 +1,143 @@
-<p>form works!</p>
+<div class = "card bg-dark text-white">
+    <div class = "card-header"> {{ titulo }}</div>
+    <div class = "card-body">
+
+    <form>
+        <div class = "form-group row">
+            <label for="nombre" class = "col-sm-label col-sm-2 control-label">Nombre</label>
+            <div class = "col-sm-6">
+                <input type = "text" class = "form-control" [(ngModel)] = "paciente.nombre" name = "nombre"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "apellido" class = "col-sm-label col-sm-2 control-label">Apellido</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.apellido" name = "apellido"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "tipoDocumento" class = "col-sm-label col-sm-2 control-label">Tipo de Documento</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.tipoDocumento" name = "tipoDocumento"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "Documento" class = "col-sm-label col-sm-2 control-label">Documento</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.documento" name = "documento"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "fechaNacimiento" class = "col-sm-label col-sm-2 control-label">Fecha de Nacimiento</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.fechaNacimiento" name = "fechaNacimiento"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "lugarNacimiento" class = "col-sm-label col-sm-2 control-label">Lugar de Nacimiento</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.lugarNacimiento" name = "lugarNacimiento"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "genero" class = "col-sm-label col-sm-2 control-label">Género</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.genero" name = "genero"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "ocupacionHobbies" class = "col-sm-label col-sm-2 control-label">Ocupacion/Hobbies</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.ocupacionHobbies" name = "ocupacionHobbieslugarNacimiento"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "estadoCivil" class = "col-sm-label col-sm-2 control-label">Estado Civil</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.estadoCivil" name = "estadoCivil"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "religion" class = "col-sm-label col-sm-2 control-label">Religión</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.religion" name = "religion"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "lugarProcencia" class = "col-sm-label col-sm-2 control-label">Lugar de Procedencia</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.lugarProcencia" name = "lugarProcencia"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "lugarResidencia" class = "col-sm-label col-sm-2 control-label">Lugar de Residencia</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.lugarResidencia" name = "lugarResidencia"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "tipoSangre" class = "col-sm-label col-sm-2 control-label">Tipo de Sangre</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.tipoSangre" name = "tipoSangre"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "eps" class = "col-sm-label col-sm-2 control-label">EPS</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.eps" name = "eps"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "acompananteTelefono" class = "col-sm-label col-sm-2 control-label">Teléfono del Acompañante</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.acompananteTelefono" name = "acompananteTelefono"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "confiabilidad" class = "col-sm-label col-sm-2 control-label">Confiabilidad</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.confiabilidad" name = "confiabilidad"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "servicio" class = "col-sm-label col-sm-2 control-label">Servicio</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.servicio" name = "servicio"> 
+            </div>
+        </div>
+
+        <div class = "form-group row">
+            <label for = "lugar" class = "col-sm-label col-sm-2 control-label">Lugar</label>
+            <div class = "col-sm-6">
+                <input type="text" class = "form-control" [(ngModel)] = "paciente.lugar" name = "lugar"> 
+            </div>
+        </div>
+        
+        <div class = "form-group row">
+            <div class = "col-sm-6">
+                <button class = "btn btn-primary" role = "button" (click) = "create()" *ngIf = "!paciente.id else elseBlock" >Crear</button>
+                <ng-template #elseBlock>
+                    <button class = "btn btn-primary" role = "button" (click) = "update()">Actualizar</button>
+                </ng-template>
+
+            </div>
+        </div>
+    </form>
+    </div>
+</div>

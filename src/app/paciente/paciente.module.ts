@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
 import { ConsultaComponent } from "./consulta/consulta.component";
+import { FormConsultaComponent } from "./form-consulta/form-consulta.component";
 import { FormComponent } from "./form/form.component";
 import { PacienteComponent } from "./paciente/paciente.component";
 import { PacienteService } from "./paciente/paciente.service";
@@ -19,6 +20,7 @@ const routes: Routes = [
         ConsultaComponent,
         PacienteComponent,
         FormComponent,
+        FormConsultaComponent
     ],
     imports: [
         CommonModule,
