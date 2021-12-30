@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Consulta } from "./consulta";
@@ -8,6 +8,8 @@ import { Consulta } from "./consulta";
 })
 export class ConsultaService{
     private urlEndPoint: string = 'http://localhost:8080/clinica/consultas';
+    private httpHeaders: HttpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
+
 
     constructor(private http: HttpClient) {}
 
@@ -16,10 +18,10 @@ export class ConsultaService{
     }
 
     delete(id: number): Observable<void> {
-        return this.http.delete<void>(`${this.urlEndPoint}/${id}`);
+        return this.http.delete<void>(`${this.urlEndPoint}/${id}`, {headers: this.httpHeaders});
     }
 
     create(consulta: Consulta): Observable<Consulta>{
-        return this.http.post<Consulta>(this.urlEndPoint, consulta);
+        return this.http.post<Consulta>(this.urlEndPoint, consulta, {headers: this.httpHeaders});
     }
 }

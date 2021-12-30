@@ -13,6 +13,8 @@ export class FormComponent implements OnInit {
   titulo: string = 'Crear Paciente';
   paciente: Paciente = new Paciente();
 
+  
+
   constructor(
     private pacienteService: PacienteService,
     private router: Router,

@@ -12,7 +12,7 @@ export class Paciente {
     ocupacionHobbies: string;
     estadoCivil: string;
     religion: string;
-    lugarProcencia: string;
+    lugarProcedencia: string;
     lugarResidencia: string;
     tipoSangre: string;
     eps: string;
